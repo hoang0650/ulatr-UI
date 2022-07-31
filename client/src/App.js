@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Header>
+        <Header className="App-header">
           <Navbar />
         </Header>
        
-          <Sider>
+          <Sider className='App-slider'>
             <SiderLeft></SiderLeft>
           </Sider>
           {/* <Content></Content>

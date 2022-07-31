@@ -14,11 +14,11 @@ class Navbar extends React.Component{
     render() {
         const { current } = this.state;
         return (
-          <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal" style={{backgroundColor:"#1e2321"}}>
+          <Menu height={40} onClick={this.handleClick} selectedKeys={[current]} mode="horizontal" style={{backgroundColor:"#1e2321"}}>
             <Menu.Item key="logo" style={{backgroundColor:"transparent"}}>
                 <Image height={44} width={44} src="https://ulatroi.net/themes/wondertag/img/logo.png"/>
             </Menu.Item>
-            <Menu.Item key="search" style={{width:684,height:40}}>    
+            <Menu.Item key="search" style={{width:684}}>    
             {/* style={{color:'#ffffff',backgroundColor:"#0f1110", borderRadius:"2em", border:0}}  */}
               <Input prefix={ <SearchOutlined/> }  style={{borderRadius:"2em", border:0,padding:"10px 10px 10px 39px"}}  size="large" color='#ffffff' inputMode="search"  placeholder="Search for people, pages, groups and #hashtags"  />
             </Menu.Item>

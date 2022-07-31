@@ -46,7 +46,7 @@ const SiderLeft = () => {
       <Menu
       onClick={onClick}
       style={{
-        width: 256,
+        width: "100%",
       }}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
