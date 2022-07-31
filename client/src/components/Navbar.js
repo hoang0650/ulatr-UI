@@ -14,21 +14,23 @@ class Navbar extends React.Component{
     render() {
         const { current } = this.state;
         return (
-          <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal" theme="dark">
-            <Menu.Item key="logo">
-                <Image height={45} width={50} src="https://ulatroi.net/themes/wondertag/img/logo.png"/>
+          <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal" style={{backgroundColor:"#1e2321"}}>
+            <Menu.Item key="logo" style={{backgroundColor:"transparent"}}>
+                <Image height={44} width={44} src="https://ulatroi.net/themes/wondertag/img/logo.png"/>
             </Menu.Item>
-            <Menu.Item key="search">
-              <Input size="large"  placeholder="Search for people, pages, groups and #hashtags" prefix={<SearchOutlined />} />
+            <Menu.Item key="search" style={{width:684,height:40}}>    
+            {/* style={{color:'#ffffff',backgroundColor:"#0f1110", borderRadius:"2em", border:0}}  */}
+              <Input prefix={ <SearchOutlined/> }  style={{borderRadius:"2em", border:0,padding:"10px 10px 10px 39px"}}  size="large" color='#ffffff' inputMode="search"  placeholder="Search for people, pages, groups and #hashtags"  />
             </Menu.Item>
 
-            <Menu.Item>
-              <Button type="dashed" shape="circle" size="large" icon={<UserAddOutlined />}></Button>
-              <Button type="primary" size="large" shape="circle" icon={<MessageOutlined />}></Button>
-              <Button type="dashed" shape="circle" size="large" icon={<NotificationOutlined />}></Button>
-              <Button type="primary" shape="circle" size="large">4</Button>
+            <Menu.Item style={{alignItems:"center"}}>
+              <Button style={{marginLeft:"0px"}} type="dashed" shape="circle" size="large" icon={<UserAddOutlined />}></Button>
+              <Button style={{marginLeft:"8px"}} type="primary"  shape="circle" size="large" icon={<MessageOutlined />}></Button>
+              <Button style={{marginLeft:"8px"}} type="dashed" shape="circle" size="large" icon={<NotificationOutlined />}></Button>
+              <Button style={{marginLeft:"8px"}} type="primary" shape="circle" size="large"  icon={<NotificationOutlined />}></Button>
             </Menu.Item>
           </Menu>
+          
         );
     }
 }

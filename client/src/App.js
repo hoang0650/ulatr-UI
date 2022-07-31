@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Layout>
         <Header>
-          <Navbar/>
+          <Navbar />
         </Header>
        
           <Sider>
