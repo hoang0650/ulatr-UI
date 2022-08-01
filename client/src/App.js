@@ -4,23 +4,24 @@ import SiderLeft from './components/SiderLeft';
 import { Layout } from 'antd';
 import "antd/dist/antd.css";
 import './App.css';
-import { Content, Header } from 'antd/lib/layout/layout';
+import { Content, Footer, Header } from 'antd/lib/layout/layout';
 import Sider from 'antd/lib/layout/Sider';
 
 function App() {
   return (
     <div className="App">
-      <Layout>
+      <Layout style={{background:"none"}}>
         <Header className="App-header">
           <Navbar />
         </Header>
-       
-          <Sider className='App-slider'>
+        <Layout>
+          <Sider style={{background:"none"}}>
             <SiderLeft></SiderLeft>
           </Sider>
-          {/* <Content></Content>
-          <Sider></Sider> */}
-        
+          <Content>asdasd</Content>
+          <Sider style={{background:"none"}}> sdaada</Sider>
+        </Layout>
+        <Footer></Footer>     
       </Layout>
     </div>
   );

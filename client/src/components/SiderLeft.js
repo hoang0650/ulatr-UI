@@ -13,27 +13,27 @@ function getItem(label, key, icon, children, type) {
 }
 
 const items = [
-  getItem('Me', 'sub1', <MailOutlined />, [
-    getItem('News Feed', '5',<Image src="https://ulatroi.net/themes/wondertag/img/logo.png"/>),
-    getItem('Albums', '5'),
-    getItem('Saved Posts', '5'),
+  getItem('Me', 'sub1', '', [
+    getItem('News Feed', 'new'),
+    getItem('Albums', 'album'),
+    getItem('Saved Posts', 'post'),
   ]),
-  getItem('Community', 'sub2', <AppstoreOutlined />, [
-    getItem('Events', '5'),
-    getItem('Market', '5'),
-    getItem('My Products', '5'),
-    getItem('My Group', '5'),
-    getItem('My Pages', '5'),
+  getItem('Community', 'sub2', '', [
+    getItem('Events', 'event'),
+    getItem('Market', 'market'),
+    getItem('My Products', 'product'),
+    getItem('My Group', 'group'),
+    getItem('My Pages', 'page'),
   ]),
-  getItem('Navigation Three', 'sub4', <SettingOutlined />, [
-    getItem('Explore', '5'),
-    getItem('Popular Posts', '5'),
-    getItem('Movies', '5'),
-    getItem('Offers', '5'),
-    getItem('Memories', '5'),
-    getItem('Find Friends', '5'),
-    getItem('Common Things', '5'),
-    getItem('Fundings', '5'),
+  getItem('Navigation Three', 'sub3', '', [
+    getItem('Explore', 'explore'),
+    getItem('Popular Posts', 'ppost'),
+    getItem('Movies', 'movie'),
+    getItem('Offers', 'offer'),
+    getItem('Memories', 'memory'),
+    getItem('Find Friends', 'find'),
+    getItem('Common Things', 'common'),
+    getItem('Fundings', 'fund'),
   ]),
 ];
 
@@ -46,7 +46,7 @@ const SiderLeft = () => {
       <Menu
       onClick={onClick}
       style={{
-        width: "100%",
+        width: "100%", float:'right'
       }}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
