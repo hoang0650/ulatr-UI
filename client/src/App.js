@@ -15,11 +15,11 @@ function App() {
           <Navbar />
         </Header>
         <Layout>
-          <Sider style={{background:"none"}}>
+
             <SiderLeft></SiderLeft>
-          </Sider>
-          <Content>asdasd</Content>
-          <Sider style={{background:"none"}}> sdaada</Sider>
+       
+          <Content>Noi dung o giua</Content>
+       
         </Layout>
         <Footer></Footer>     
       </Layout>

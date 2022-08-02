@@ -43,17 +43,18 @@ const SiderLeft = () => {
   };
 
   return (
+    <div style={{  width: '300px',height: '500px',backgroundColor: '#ffffff'}}>
       <Menu
       onClick={onClick}
       style={{
-        width: "100%", float:'right'
+        width: "270px", marginLeft: 'auto', marginRight:'auto', marginTop:10, backgroundColor: 'silver',borderRadius:10, marginBlock:10
       }}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
       items={items}
     />
-
+</div>
     
   );
 };
