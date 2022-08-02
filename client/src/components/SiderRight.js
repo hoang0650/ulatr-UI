@@ -37,24 +37,19 @@ const items = [
   ]),
 ];
 
-const SiderLeft = () => {
+const SiderRight = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
 
   return (
-    <div style={{  width: '300px',height: '500px',backgroundColor: '#ffffff'}}>
-      <Menu onClick={onClick}
-      style={{
-        width: "270px", marginLeft: 'auto', marginRight:'auto', marginTop:10, backgroundColor: 'silver',borderRadius:10, marginBlock:10,fontWeight:'bold'
-      }}
-      defaultSelectedKeys={['1']}
-      defaultOpenKeys={['sub1']}
-      mode="inline"
-      items={items}
-    />
+    <div style={{  width: '100px',height: '500px',backgroundColor: '#ffffff'}}>
+    <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
+    <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
+    <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
+    <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
 </div>
   );
 };
 
-export default SiderLeft;
+export default SiderRight;
