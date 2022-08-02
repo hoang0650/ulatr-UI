@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import Navbar from './components/Navbar';
 import SiderLeft from './components/SiderLeft';
+import Home from './components/Home';
 import { Layout } from 'antd';
 import "antd/dist/antd.css";
 import './App.css';
-import { Content, Footer, Header } from 'antd/lib/layout/layout';
-import Sider from 'antd/lib/layout/Sider';
+const {Header,Content,Sider} = Layout;
+// import Sider from 'antd/lib/layout/Sider';
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
           <Navbar />
         </Header>
         <Layout>
-          <Sider style={{background:"none"}}>
+          <Sider className='site-layout-background' style={{background:"none"}}>
             <SiderLeft></SiderLeft>
           </Sider>
-          <Content>asdasd</Content>
-          <Sider style={{background:"none"}}> sdaada</Sider>
+          <Content className='site-layout-background'>
+            <Home></Home>
+          </Content>
+          <Sider style={{background:"none"}}> </Sider>
         </Layout>
-        <Footer></Footer>     
       </Layout>
     </div>
   );
