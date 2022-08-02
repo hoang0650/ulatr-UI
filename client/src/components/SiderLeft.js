@@ -1,5 +1,5 @@
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
-import { Menu,Image } from 'antd';
+import { Menu,Image, Row, Col } from 'antd';
 import React from 'react';
 
 function getItem(label, key, icon, children, type) {
@@ -43,9 +43,8 @@ const SiderLeft = () => {
   };
 
   return (
-    <div style={{  width: '300px',height: '500px',backgroundColor: '#ffffff'}}>
-      <Menu
-      onClick={onClick}
+    <div style={{  width: '300px',height: '500px',backgroundColor: 'black'}}>
+      <Menu onClick={onClick}
       style={{
         width: "270px", marginLeft: 'auto', marginRight:'auto', marginTop:10, backgroundColor: 'silver',borderRadius:10, marginBlock:10
       }}
@@ -55,6 +54,16 @@ const SiderLeft = () => {
       items={items}
     />
 </div>
+    >
+         
+      {/* <Row gutter={[16,8]}>
+        <Col className="gutter-row" span={2}>
+        </Col>
+        <Col className="gutter-row" span={2}>
+        </Col>
+      </Row> */}
+   
+
     
   );
 };
