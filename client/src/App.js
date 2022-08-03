@@ -4,6 +4,7 @@ import "antd/dist/antd.css";
 import './App.css';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Login from './components/LoginComponent';
 const {Header,Content,Sider} = Layout;
 // import Sider from 'antd/lib/layout/Sider';
 
@@ -13,7 +14,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' exact element={<Home/>} />
-
+            <Route path='/login' exact element={<Login/>}/>
           </Routes>
         {/* <Route path='/n' exact component={Navbar} /> */}
         </BrowserRouter>
