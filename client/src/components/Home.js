@@ -131,20 +131,35 @@ const Home = ()=>{
                                 <Button shape="round" size="large" icon={<FontAwesomeIcon icon={faMap} />}>Maps</Button>
                             </Menu.Item>
                         </Menu>
-                        <Card>
-                            <Menu mode="horizontal">
-                                <Menu.Item style={{alignItems:"center"}}> 
-                                    <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
-                                </Menu.Item>
-                                <Menu.Item>
-                                    <Input prefix={ <SearchOutlined/> }  style={{borderRadius:"2em", border:0,padding:"10px 10px 10px 19px"}}  size="large" color='#ffffff' inputMode="search"  placeholder="What's going on? #Hashtag.. @Mention.. Link.."  />
-                                </Menu.Item>
-                                <Menu.Item>
-                                    <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
-                                </Menu.Item>
-                            </Menu>
+                        <Layout style={{background:"none"}}>
+                            <Content style={{width:"65%",padding:"10px 10px 10px 0px"}}>
+                                <Card style={{padding:"10px 0px"}}>
+                                <Menu mode="horizontal">
+                                        <Menu.Item style={{alignItems:"center"}}> 
+                                            <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            <Input prefix={ <SearchOutlined/> }  style={{borderRadius:"2em", border:0,padding:"10px 19px 10px 19px"}}  size="large" color='#ffffff' inputMode="search"  placeholder="What's going on? #Hashtag.. @Mention.. Link.."  />
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
+                                        </Menu.Item>
+                                </Menu>
 
-                        </Card>
+                                </Card>
+                                <Card style={{padding:"10px 0px"}}>
+                                    sssasd
+                                </Card>
+                            </Content>
+                            <Sider style={{width:"35%", padding:"10px 0px 0px 0px", background:"none"}}>
+                                <Card >
+                                    sadd
+                                </Card>
+
+                            </Sider>
+
+                        </Layout>
+
                 </div>
                 </Content>
                 <Sider width={80}  style={{marginLeft:20,float:"right",maxWidth:0, backgroundColor:"transparent"}}> <SiderRight/></Sider>
