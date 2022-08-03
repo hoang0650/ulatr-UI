@@ -43,12 +43,12 @@ const SiderRight = () => {
   };
 
   return (
-    <div style={{  width: '100px',height: '500px',backgroundColor: '#ffffff'}}>
+    <div style={{ float:'right',width: '80px',height: '500px',backgroundColor: '#ffffff'}}>
     <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
     <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
     <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
     <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
-</div>
+    </div>
   );
 };
 

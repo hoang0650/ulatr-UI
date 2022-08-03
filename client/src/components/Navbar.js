@@ -1,5 +1,7 @@
 import { Menu, Image, Input, Button } from 'antd';
 import { NotificationOutlined, MessageOutlined, UserAddOutlined, SearchOutlined } from '@ant-design/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserTie, faBell, faComment, faUserPlus} from '@fortawesome/fontawesome-free-solid'
 import React from 'react';
 const { SubMenu } = Menu;
 class Navbar extends React.Component{
@@ -24,10 +26,10 @@ class Navbar extends React.Component{
             </Menu.Item>
 
             <Menu.Item style={{alignItems:"center"}}>
-              <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<UserAddOutlined />}></Button>
-              <Button style={{marginLeft:"8px",color:'#ffffff',backgroundColor:'#333333',border:0}} type="primary"  shape="circle" size="large" icon={<MessageOutlined />}></Button>
-              <Button style={{marginLeft:"8px",color:'#ffffff',backgroundColor:'#333333',border:0}} type="primary" shape="circle" size="large" icon={<NotificationOutlined />}></Button>
-              <Button style={{marginLeft:"8px",color:'#ffffff',backgroundColor:'#333333',border:0}} type="primary" shape="circle" size="large"  icon={<NotificationOutlined />}></Button>
+              <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserPlus} />}></Button>
+              <Button style={{marginLeft:"8px",color:'#ffffff',backgroundColor:'#333333',border:0}} type="primary"  shape="circle" size="large" icon={<FontAwesomeIcon icon={faComment}/>}></Button>
+              <Button style={{marginLeft:"8px",color:'#ffffff',backgroundColor:'#333333',border:0}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faBell} />}></Button>
+              <Button style={{marginLeft:"8px",color:'#ffffff',backgroundColor:'#333333',border:0}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
             </Menu.Item>
           </Menu>
           
