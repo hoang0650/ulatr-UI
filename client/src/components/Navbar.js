@@ -16,7 +16,7 @@ class Navbar extends React.Component{
     render() {
         const { current } = this.state;
         return (
-          <Menu height={40} onClick={this.handleClick} selectedKeys={[current]} mode="horizontal" style={{backgroundColor:"#1e2321"}}>
+          <Menu height={44} onClick={this.handleClick} selectedKeys={[current]} mode="horizontal" style={{backgroundColor:"#1e2321"}}>
             <Menu.Item key="logo" style={{backgroundColor:"transparent"}}>
                 <Image height={44} width={44} style={{marginBottom:3}} src="https://ulatroi.net/themes/wondertag/img/logo.png"/>
             </Menu.Item>
