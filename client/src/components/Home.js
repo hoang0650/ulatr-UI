@@ -142,7 +142,7 @@ const Home = ()=>{
                                     </Card>
                                 </Space> */}
 
-                                <Card style={{marginBottom:20}}>
+                                <Card style={{marginBottom:20,borderWidth:1,borderColor:'sliver',borderRadius:10}}>
                                 <Menu mode="horizontal" style={{backgroundColor:"transparent",border:0}}>
                                         <Menu.Item> 
                                         <Avatar style={{width:50,height:50}} src="https://joeschmoe.io/api/v1/random" />
@@ -156,7 +156,7 @@ const Home = ()=>{
                                 </Menu>
                                 </Card>
 
-                                <Card style={{padding:"10px 0px"}} actions={[
+                                <Card style={{padding:"10px 0px",borderWidth:1,borderColor:'sliver',borderRadius:10}} actions={[
                                 <span><FontAwesomeIcon icon={faThumbsUp} key="like" /> Like </span>,
                                 <span><FontAwesomeIcon icon={faComment} key="comment" /> Comments </span>,
                                 <span><FontAwesomeIcon icon={faShare} key="share" /> Shares </span>,
