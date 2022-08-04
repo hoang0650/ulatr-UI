@@ -8,9 +8,9 @@
 }
 
 .menu{
-    border-bottom:0
+    border-bottom: none !important;
 }
-  
+
 /* :local(.content) {
     font-size: 15px;
     text-align: center;

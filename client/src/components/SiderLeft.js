@@ -25,7 +25,7 @@ const items = [
     getItem('My Group', 'group'),
     getItem('My Pages', 'page'),
   ]),
-  getItem('Navigation Three', 'sub3', '', [
+  getItem('Explore', 'sub3', '', [
     getItem('Explore', 'explore'),
     getItem('Popular Posts', 'ppost'),
     getItem('Movies', 'movie'),
@@ -51,10 +51,19 @@ const SiderLeft = () => {
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
-      items={items}
-    />
+      items={items}>
+        <Menu.Item>
+          <Row gutter={[16,8]}>
+            <Col span={12} items={'News Feed'}/>
+            <Col span={12} items={'News Feed'}/>
+            <Col span={12} items={'News Feed'}/>
+          </Row>
+        </Menu.Item>
+      </Menu>
 </div>
   );
 };
 
+      
 export default SiderLeft;
+    

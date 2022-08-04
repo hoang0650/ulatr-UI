@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import {Breadcrumb, Row, Col, Divider, Card, Menu, Button, Badge,Avatar, Layout, Input } from "antd";
-import { SwapOutlined, SearchOutlined, AlignLeftOutlined } from '@ant-design/icons';
+import {Breadcrumb, Row, Col, Divider, Card, Menu, Button, Badge,Avatar, Layout, Input, Space } from "antd";
+import { SwapOutlined, SearchOutlined, AlignLeftOutlined, SettingOutlined,EditOutlined,EllipsisOutlined } from '@ant-design/icons';
 import Navbar from '../components/Navbar';
 import styles from '../styles/home.css';
 import SiderLeft from '../components/SiderLeft';
 import SiderRight from '../components/SiderRight';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserTie,faTree, faCamera, faVideo, faMusic, faFile, faMap, faPlus } from '@fortawesome/fontawesome-free-solid'
+import { faUserTie,faTree, faCamera, faVideo, faMusic, faFile, faMap, faPlus, faThumbsUp, faComment, faShare} from '@fortawesome/fontawesome-free-solid'
 
 const {Header,Content,Sider} = Layout;
 const {Meta} = Card;
@@ -111,29 +111,40 @@ const Home = ()=>{
                         </Col>
                     </Row>
                     <Divider style={ { margin: "10px 0"}  }></Divider>
-                        <Menu mode="horizontal" style={styles.menu} >
-                            <Menu.Item>
-                                
+                        <Space>
                                 <Button shape="round" size="large" icon={<SwapOutlined />}></Button>
                            
-                                <Button shape="round" size="large" icon={<FontAwesomeIcon icon={faTree} />}> All</Button>
+                                <Button shape="round" size="large"><Space><FontAwesomeIcon icon={faTree} />All</Space></Button>
                             
                                 <Button shape="round" size="large" icon={<AlignLeftOutlined />}>Text</Button>
                            
-                                <Button shape="round" size="large" icon={<FontAwesomeIcon icon={faCamera} />}> Photos</Button>
+                                <Button shape="round" size="large"><Space><FontAwesomeIcon icon={faCamera} />Photos</Space> </Button>
                             
-                                <Button shape="round" size="large" icon={<FontAwesomeIcon icon={faVideo} />}> Videos</Button>
+                                <Button shape="round" size="large"><Space><FontAwesomeIcon icon={faVideo} />Videos</Space></Button>
                             
-                                <Button shape="round" size="large" icon={<FontAwesomeIcon icon={faMusic} />}>Sounds</Button>
+                                <Button shape="round" size="large"><Space><FontAwesomeIcon icon={faMusic} />Sounds</Space></Button>
                             
-                                <Button shape="round" size="large" icon={<FontAwesomeIcon icon={faFile} />}>Files</Button>
+                                <Button shape="round" size="large"><Space><FontAwesomeIcon icon={faFile} />Files</Space></Button>
                           
-                                <Button shape="round" size="large" icon={<FontAwesomeIcon icon={faMap} />}>Maps</Button>
-                            </Menu.Item>
-                        </Menu>
-                        <Layout style={{background:"none"}}>
-                            <Content style={{width:"65%",padding:"10px 10px 10px 0px"}}>
-                                <Card style={{padding:"10px 0px"}}>
+                                <Button shape="round" size="large"><Space><FontAwesomeIcon icon={faMap} />Maps</Space></Button>
+
+                        </Space>
+
+                        <Row>
+                            <Col span={16} style={{width:"60%",padding:"10px 10px 10px 0px"}}>
+
+                                {/* <Space>
+                                    <Card>
+                                        <Space>
+                                            <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
+                                            <Input prefix={ <SearchOutlined/> }  style={{ borderRadius:"2em", border:0,padding:"10px 19px 10px 19px"}}  size="large" color='#ffffff' inputMode="search"  placeholder="What's going on? #Hashtag.. @Mention.. Link.."  />
+                                            <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
+
+                                        </Space>
+                                    </Card>
+                                </Space> */}
+
+                                <Card style={{padding:"10px 10px 10px 0px"}}>
                                 <Menu mode="horizontal">
                                         <Menu.Item style={{alignItems:"center"}}> 
                                             <Button style={{marginLeft:"0px",color:'#ffffff',backgroundColor:'#333333',border:0,marginBottom:10}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faUserTie} />}></Button>
@@ -147,18 +158,27 @@ const Home = ()=>{
                                 </Menu>
 
                                 </Card>
-                                <Card style={{padding:"10px 0px"}}>
-                                    sssasd
-                                </Card>
-                            </Content>
-                            <Sider style={{width:"35%", padding:"10px 0px 0px 0px", background:"none"}}>
-                                <Card >
-                                    sadd
+
+                                <Card style={{padding:"10px 0px"}} actions={[
+                                <FontAwesomeIcon icon={faThumbsUp} key="like" />,
+                                <FontAwesomeIcon icon={faComment} key="comment" />,
+                                <FontAwesomeIcon icon={faShare} key="share" />,
+                                ]}>
+                                    <Meta avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
+                                    title="Phan Hoàng"
+                                    description="vừa cập nhật ảnh của anh ấy"
+                                    
+                                    />
+                                    <img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"/>
                                 </Card>
 
-                            </Sider>
-
-                        </Layout>
+                            </Col>
+                            <Col span={8} style={{width:"60%",padding:"10px 10px 10px 0px"}}>
+                                <Card>col-12</Card>
+                            </Col>
+                        </Row>                 
+                     
+                      
 
                 </div>
                 </Content>

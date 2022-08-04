@@ -73,14 +73,14 @@ class Login extends React.Component {
                                             name="username"
                                             rules={[{ required: true, message: 'Please input your Username!' }]}
                                         >
-                                            <Input style={{ backgroundColor: '#f5f5f5', width: 350, height: 56, alignContent: 'left', borderRadius: 5, borderBottomColor: 'black' }} placeholder="Username" />
+                                            <Input style={{ backgroundColor: '#f5f5f5', width: 250, height: 56, alignContent: 'left', borderRadius: 5, borderBottomColor: 'black' }} placeholder="Username" />
                                         </Form.Item>
                                         <Form.Item
                                             name="password"
                                             rules={[{ required: true, message: 'Please input your Password!' }]}
                                         >
                                             <Input
-                                                style={{ backgroundColor: '#f5f5f5', width: 350, height: 56, alignContent: 'left', borderRadius: 5, borderBottomColor: 'black' }}
+                                                style={{ backgroundColor: '#f5f5f5', width: 250, height: 56, alignContent: 'left', borderRadius: 5, borderBottomColor: 'black' }}
                                                 type="password"
                                                 placeholder="Password"
                                             />
