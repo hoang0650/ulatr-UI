@@ -59,6 +59,9 @@ const SiderLeft = () => {
             <Col span={12} items={'News Feed'}/>
           </Row>
         </Menu.Item>
+        <Menu.Item to='sub1' key = 'new'>
+        <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
+        </Menu.Item>
       </Menu>
 </div>
   );

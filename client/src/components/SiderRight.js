@@ -46,11 +46,11 @@ const SiderRight = () => {
   };
 
   return (
-    <div style={{ float:'right',width: '80px',height: '500px',backgroundColor: '#ffffff'}}>
-       <Button style={{marginTop:20,width:60,height:60,color:'#4caf50',backgroundColor:'#ebeef0',border:0}} type="primary" shape="circle" icon={<FontAwesomeIcon icon={faEdit} />}></Button>
+    <div style={{ float:'right',width: '80px',height: '500px',backgroundColor: '#ffffff',borderLeftColor:'#dcdcdc',borderLeftWidth:1,borderLeftStyle:'solid'}}>
+       <Button style={{marginTop:20,width:60,height:60,color:'black',backgroundColor:'#ebeef0',border:0}} type="primary" shape="circle" icon={<FontAwesomeIcon icon={faEdit} />}></Button>
        <br/>
-       <Button style={{marginTop:20,width:60,height:60,color:'#4caf50',backgroundColor:'#ebeef0',border:0}} type="primary" shape="circle" icon={<FontAwesomeIcon icon={faUserFriends} />}></Button>
-       <Divider/>
+       <Button style={{marginTop:20,width:60,height:60,color:'black',backgroundColor:'#ebeef0',border:0}} type="primary" shape="circle" icon={<FontAwesomeIcon icon={faUserFriends} />}></Button>
+       <Divider style={{borderColor:'#dcdcdc'}}/>
     <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
     <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
     <Image src="https://static.vecteezy.com/system/resources/thumbnails/002/002/300/small_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"></Image>
