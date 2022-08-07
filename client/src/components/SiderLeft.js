@@ -43,7 +43,7 @@ const SiderLeft = () => {
   };
 
   return (
-    <div style={{  width: '230px',height: '500px',backgroundColor: '#ffffff'}}>
+    <div style={{  width: '230px',height: '100%',backgroundColor: '#ffffff'}}>
       <Menu onClick={onClick}
       style={{
         width: "200px", marginLeft: 'auto', marginRight:'auto', marginTop:10, backgroundColor: 'silver',borderRadius:10, marginBlock:10,fontWeight:'bold'

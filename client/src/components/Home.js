@@ -143,17 +143,22 @@ const Home = ()=>{
                                 </Space> */}
 
                                 <Card style={{marginBottom:20,borderWidth:1,borderColor:'sliver',borderRadius:10}}>
-                                <Menu mode="horizontal" style={{backgroundColor:"transparent",border:0}}>
+                                    <Space style={{backgroundColor:"transparent",border:0}}>
+                                        <Avatar style={{width:50,height:50}} src="https://joeschmoe.io/api/v1/random" />
+                                        <Input style={{backgroundColor:'#ebeef0',borderRadius:10, border:0,width:450,height:50,padding:"10px 19px 10px 19px",color:'black'}}  size="large"  color='black' inputMode="search"  placeholder="What's going on? #Hashtag.. @Mention.. Link.."  />
+                                        <Button style={{marginLeft:"0px",color:'#4caf50',backgroundColor:'#ebeef0',border:0}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faCamera} />}></Button>
+                                    </Space>
+                                {/* <Menu mode="horizontal" style={{backgroundColor:"transparent",border:0}}>
                                         <Menu.Item> 
                                         <Avatar style={{width:50,height:50}} src="https://joeschmoe.io/api/v1/random" />
                                         </Menu.Item>
                                         <Menu.Item>
-                                            <Input style={{backgroundColor:'#ebeef0',borderRadius:10, border:0,width:500,height:50,padding:"10px 19px 10px 19px",color:'black'}}  size="large"  color='black' inputMode="search"  placeholder="What's going on? #Hashtag.. @Mention.. Link.."  />
+                                            <Input style={{backgroundColor:'#ebeef0',borderRadius:10, border:0,width:340,height:50,padding:"10px 19px 10px 19px",color:'black'}}  size="large"  color='black' inputMode="search"  placeholder="What's going on? #Hashtag.. @Mention.. Link.."  />
                                         </Menu.Item>
                                         <Menu.Item style={{alignItems:'center'}}>
                                             <Button style={{marginLeft:"0px",color:'#4caf50',backgroundColor:'#ebeef0',border:0}} type="primary" shape="circle" size="large" icon={<FontAwesomeIcon icon={faCamera} />}></Button>
                                         </Menu.Item>
-                                </Menu>
+                                </Menu> */}
                                 </Card>
 
                                 <Card style={{padding:"10px 0px",borderWidth:1,borderColor:'sliver',borderRadius:10}} actions={[
@@ -161,19 +166,30 @@ const Home = ()=>{
                                 <span><FontAwesomeIcon icon={faComment} key="comment" /> Comments </span>,
                                 <span><FontAwesomeIcon icon={faShare} key="share" /> Shares </span>,
                                 ]}>
-                                       <Button style={{zIndex:10,float:'right',paddingBottom:20}} shape="circle" size="large"><Space><FontAwesomeIcon icon={faChevronDown} /></Space></Button>
+                                    <Button style={{zIndex:10,float:'right',paddingBottom:20}} shape="circle" size="large"><Space><FontAwesomeIcon icon={faChevronDown} /></Space></Button>
                                     <Meta avatar={<Avatar style={{width:60,height:60}} src="https://joeschmoe.io/api/v1/random" />}
                                     title="Phan Hoàng"
                                     description="4d | Translate"  
                                                            
                                     />
                          
-                                    <img style={{marginTop:30,marginBottom:10,width:700,height:400}} alt="example" src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg"/>
+                                    <img style={{marginTop:30,marginBottom:10,width:"95%",height:400}} alt="example" src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg"/>
                                 </Card>
 
                             </Col>
                             <Col span={8} style={{width:"60%",padding:"10px 10px 10px 0px"}}>
-                                <Card>col-12</Card>
+                                <Card style={{borderRadius:10}}>
+                                    <Meta avatar={<Avatar style={{width:30,height:30}} src="https://joeschmoe.io/api/v1/random" />}
+                                    title="Pro Members"
+                                    />
+                                    <Card style={{ marginTop:10, marginBottom:10, borderRadius:10 }}>
+                                        {/* <a style={{backgroundColor:"#ffd5c8",height:123,margin:"0 0 12px",display:"block",borderRadius:10,padding:12,position:"relative",width:"100%",overflow:"hidden"}}>
+                                            <img src="https://ulatroi.net/themes/wondertag/img/pro-me.png"/>
+                                            <p>Upgrade To Pro & Put Me Here</p>
+                                            <Button>Upgrade</Button>
+                                        </a> */}
+                                    </Card>
+                                </Card>
                             </Col>
                         </Row>                 
                      
